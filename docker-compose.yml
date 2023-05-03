@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  weatherizeme:
+    image: ${DOCKER_REGISTRY-}weatherizeme
+    build:
+      context: .
+      dockerfile: WeatherizeMe/Dockerfile
